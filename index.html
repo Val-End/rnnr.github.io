@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: black;
+            background-image: url("../assets/images/void.png");
+            color: white;
+            font-family: 'PT Sans', sans-serif;
+            overflow: hidden;
+        }
+
+        a {
+            color:black;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        img {
+            height: 45vh;
+            filter: contrast(1.2);
+            position: absolute;
+            animation-name: introImg, floatin;
+            animation-duration: 2s, 6s;
+            animation-delay: 0ms, 2s;
+            animation-timing-function: none, cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            animation-iteration-count: 1, infinite;
+        }
+
+        h1 {
+            position: absolute;
+            mix-blend-mode: color-dodge;
+            animation: introTxt 4s;
+        }
+
+        @keyframes introTxt {
+            0% { opacity: 0%; }
+            100% { opacity: 100%; }
+        }
+
+        @keyframes introImg {
+            0% { padding-top: 200vh; }
+            100% { padding-top: 0; }
+        }
+
+        @keyframes floatin {
+            0% { padding-top: 0; }
+            50% { padding-top: 20vh; }
+            100% { padding-top: 0; }
+        }
+    </style>
+    <head>
+        <title>? ? ?</title>
+    </head>
+    <body>
+        <a href="https://www.youtube.com/watch?v=ezSpDRAnOV0">¿  ?</a>
+        <div id="valFinal">
+            <img src="assets/images/val.png"/>
+            <h1>Soon?</h1>
+        </div>
+    </body>
+</html>
